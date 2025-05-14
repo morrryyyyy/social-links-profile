@@ -36,35 +36,53 @@ body{
 h1{
     font-size: 20px;
     margin-bottom: 0.5rem;
+    font-weight: 900;
 }
 h3{
     color: var(--green);
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 0.5rem;
     margin-top: 0;
 }
 .description{
-    font-size: 16px;
+    font-size: 14px;
 }
-.button-row{
+ .link-row{
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-button{
-    background-color: var(--grey700);
-    border-radius: 8px;
-    padding: 10px;
+    margin-top: 1.5rem;
     width: 100%;
-    font-family: "Inter", sans-serif;
+} 
+.link{
+    background-color: var(--grey700);
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
     color: var(--white);
-    border: 0;
+    padding: 15px;
+    margin: 0;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
     font-weight: 600;
+    transition: all 0.3s ease;
 }
-button:hover{
+
+.link:hover{
     background-color: var(--green);
-    color: var(--grey800);
+    color: var(--grey900);
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
+.link:focus {
+    outline: 2px dashed var(--green);
+    outline-offset: 4px;
+  }
+  
 .attribution {
   font-size: 11px;
   text-align: center;
